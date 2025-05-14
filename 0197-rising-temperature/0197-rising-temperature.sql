@@ -1,6 +1,8 @@
 # Write your MySQL query statement below
-SELECT w1.id
-FROM Weather w1 
-JOIN Weather w2
-ON w1.recordDate = DATE_ADD(w2.recordDate, INTERVAL 1 DAY)
-WHERE w1.temperature > w2.temperature ;
+select w1.id 
+from weather w1
+join weather w2
+on w1.recordDate = DATE_ADD(w2.recordDate, INTERVAL 1 DAY)
+#날짜에 시간/날짜 간격을 추가한 다음 날짜를 반환하는 date_add 함수 사용 
+#DATE_ADD(기준 날짜,  INTERVAL 값 추가 단위)
+where w1.temperature > w2.temperature 
