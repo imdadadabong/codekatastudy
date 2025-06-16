@@ -5,5 +5,3 @@ join ICECREAM_INFO I on F.FLAVOR = I.FLAVOR
 group by I.INGREDIENT_TYPE 
 order by F.TOTAL_ORDER ASC;
 
-#---헷갈리는 포인트 
-#Join이 안되는 이유 (join으로 시도 시 오답)
