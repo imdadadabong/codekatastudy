@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT MEMBER_ID, MEMBER_NAME, GENDER, Date_Format(DATE_OF_BIRTH,'%Y-%m-%d') as DATE_OF_BIRTH
+FROM MEMBER_PROFILE
+WHERE MONTH (DATE_OF_BIRTH) Like '3'
+and GENDER Like 'W'
+and TLNO IS NOT NULL 
+#3월인 여성회원 생일 , 전화번호 Null 값 제외 
+ORDER BY MEMBER_ID ASC; 
